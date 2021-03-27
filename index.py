@@ -1,3 +1,4 @@
+#pip install xmltodict requests matplotlib
 import xmltodict
 import requests
 import json
@@ -20,6 +21,6 @@ plt.title(choose)
 a = []
 
 for i in jsontemp['response']['body']['items']['item'] :
-    a.append(int(i[choose]))
+    a.append(float(i[choose]))
 plt.plot(a)
 plt.show()

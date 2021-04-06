@@ -21,6 +21,7 @@ plt.title(choose)
 a = []
 
 for i in jsontemp['response']['body']['items']['item'] :
-    a.append(float(i[choose]))
+    if i[choose] != '-' :
+        a.append(float(i[choose]))
 plt.plot(a)
 plt.show()

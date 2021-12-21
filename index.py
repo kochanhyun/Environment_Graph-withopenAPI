@@ -5,7 +5,7 @@ import json
 import matplotlib.pyplot as plt
 
 url = "http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty"
-queryParams = "?ServiceKey=hJ1gcOgUq0k%2F2DLu0BVpkgVelUaGFGr0RiT7%2Br94vpTWGvNDiVn390MvVkTH0ZkwjDuBymy7m1t%2FyB5nP5E5lQ%3D%3D&numOfRows=200&pageNo=1&stationName=한솔동&dataTerm=MONTH&ver=1.3"
+queryParams = "?ServiceKey=wlfnDNqYOsIwBrV%2Fq%2BpR6Qgi2N%2Bn74XgoO0wXYvFRBFpMMlXD98O%2BWHz5GpDTNxCiBTWCHt%2Fb7clHll53zZqqA%3D%3D&numOfRows=200&pageNo=1&stationName=한솔동&dataTerm=MONTH&ver=1.3"
 
 res = requests.get(url + queryParams)
 cc = xmltodict.parse(res.text)

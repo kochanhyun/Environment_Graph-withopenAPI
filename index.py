@@ -4,7 +4,7 @@ import requests
 import json
 import matplotlib.pyplot as plt
 
-url = "http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty"
+url = "http://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty"
 queryParams = "?ServiceKey=wlfnDNqYOsIwBrV%2Fq%2BpR6Qgi2N%2Bn74XgoO0wXYvFRBFpMMlXD98O%2BWHz5GpDTNxCiBTWCHt%2Fb7clHll53zZqqA%3D%3D&numOfRows=200&pageNo=1&stationName=한솔동&dataTerm=MONTH&ver=1.3"
 
 res = requests.get(url + queryParams)
